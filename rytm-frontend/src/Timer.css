@@ -1,0 +1,32 @@
+/* Timer.css */
+.neumorphism-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .neumorphism-circle.active {
+    background-color: #ccc; /* Couleur différente quand le timer est actif */
+  }
+  
+  .timer-container {
+    text-align: center;
+  }
+  
+  .timer-container h2 {
+    font-size: 24px;
+  }
+  
+  .timer-container button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

@@ -5,14 +5,16 @@ import Timer from './Timer';
 import CurrentTime from './CurrentTime';
 import Menu from './Menu';
 import Welcome from './Welcome';
+import WeatherWidget from './WeatherWidget';
 
 function App() {
     return (
         
         <div className="App">
             <div className="app-container">
-      <Welcome username="John Doe" />
-    </div>
+                <Welcome username="John Doe" />
+            </div>
+    <WeatherWidget />
             <header className="App-header">
             
                 <h1>Task Manager</h1>
