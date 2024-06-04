@@ -1,0 +1,82 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: calc(2/12 * 100%);
+    background-color: #9f7f76;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 0 20px 20px; /* Padding à gauche uniquement */
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .menu.transparent {
+    opacity: 0.1;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: center;
+    margin-bottom: 20px; /* Espacement entre les icônes et le menu */
+    padding-right: 20px; /* Pour s'assurer que les icônes ne touchent pas le bord droit */
+  }
+  
+  .right-icons {
+    display: flex;
+    gap: 20px; /* Espacement entre les icônes à droite */
+    margin-left: auto; /* Pousse les icônes de droite vers la droite */
+  }
+  
+  .icon {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    margin-right: 10px; /* Réduire l'espace entre le menu burger et la barre de recherche */
+  }
+  
+  .menu.transparent .menu-icon {
+    opacity: 1; /* Rendre le menu burger complètement visible */
+  }
+  
+  .search-input {
+    margin-left: 0px; /* Réduire l'espace à gauche */
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    padding: 10px 0;
+    transition: background-color 0.3s, border-radius 0.3s;
+  }
+  
+  .menu ul li a {
+    color: white;
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    display: block;
+    padding: 10px 20px 10px 10px; /* Padding à droite ajouté */
+    transition: background-color 0.3s, border-radius 0.3s;
+  }
+  
+  .menu ul li a:hover {
+    background-color: #ececec;
+    color: #000; /* Change la couleur du texte lors du survol */
+    border-radius: 20px 0 0 20px; /* Arrondi sur le côté gauche */
+  }
+  
+  .menu ul li a:hover {
+    text-decoration: none; /* Assure que le texte n'est pas souligné au survol */
+  }
+  
