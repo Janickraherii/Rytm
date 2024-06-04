@@ -2,7 +2,7 @@ import React from 'react';
 import TaskList from './TaskList';
 import AddTask from './AddTask';
 import Timer from './Timer';
-
+import CurrentTime from './CurrentTime';
 function App() {
     return (
         <div className="App">
@@ -11,6 +11,7 @@ function App() {
                 <AddTask />
                 <TaskList />
                 <Timer />
+                <CurrentTime /> {/* Intègre le composant ici */}
             </header>
         </div>
     );
