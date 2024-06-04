@@ -4,13 +4,20 @@ import AddTask from './AddTask';
 import Timer from './Timer';
 import CurrentTime from './CurrentTime';
 import Menu from './Menu';
+import Welcome from './Welcome';
 
 function App() {
     return (
+        
         <div className="App">
+            <div className="app-container">
+      <Welcome username="John Doe" />
+    </div>
             <header className="App-header">
+            
                 <h1>Task Manager</h1>
-                <Menu />
+                
+                                <Menu />
                 <AddTask />
                 <TaskList />
                 <Timer />

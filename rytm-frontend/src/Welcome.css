@@ -1,0 +1,45 @@
+/* src/Welcome.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* Réinitialiser la marge de l'élément parent */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.welcome-container {
+  display: flex;
+  background: #f0f0f0; /* Couleur de fond plus claire, proche du blanc */
+  border-radius: 16px;
+  box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff; /* Ajuster les ombres pour un effet plus léger */
+  padding: 20px;
+  width: 80%; /* Prend 80% de la largeur de l'écran */
+  font-family: 'Open Sans Light', sans-serif; /* Utiliser Open Sans Light */
+  margin: 20px auto 0; /* Centrer horizontalement et ajouter un espacement en haut */
+  justify-content: flex-start; /* Forcer l'alignement à gauche */
+}
+
+.welcome-text {
+  flex: 1;
+  text-align: left; /* Aligner le texte à gauche */
+}
+
+.welcome-text h1 {
+  font-size: 24px;
+  color: #333; /* Texte sombre pour un bon contraste */
+}
+
+.welcome-text p {
+  font-size: 14px; /* Taille de la police réduite */
+  font-weight: 300; /* Poids de la police "Light" */
+  color: #666; /* Texte légèrement plus clair que le titre */
+}
+
+.welcome-image {
+  flex: 0 0 auto;
+}
+
+.welcome-image img {
+  max-width: 150px; /* Limite la taille de l'image */
+  border-radius: 8px; /* Ajoute des coins arrondis à l'image */
+}
