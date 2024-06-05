@@ -1,0 +1,24 @@
+/* src/WeatherWidget.css */
+.weather-widget {
+    background-color: #f0f0f0;
+    border-radius: 16px;
+    box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
+    padding: 20px;
+    position: fixed;
+    top: 50px; /* 50px from the top of the viewport */
+    right: 20px; /* 20px from the right of the viewport */
+    max-height: 50vh; /* Maximum height 50% of the viewport height */
+    max-width: calc(2 * (100vw / 12)); /* Maximum width 2/12 of the viewport width */
+    overflow: auto; /* Add scroll if content overflows */
+  }
+  
+  .weather-widget h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+
+  .temperature {
+    font-size: 24px; /* Taille de la police plus grande */
+    color: brown; /* Couleur marron */
+  }

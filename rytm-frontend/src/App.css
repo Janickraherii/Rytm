@@ -9,3 +9,20 @@
   padding-left: 10%; /* Ajouter un padding pour centrer le composant */
   padding-right: 10%; /* Ajouter un padding pour centrer le composant */
 }
+
+
+/* Styles.css */
+
+/* Styles.css */
+
+.container {
+  display: flex; /* Utiliser Flexbox */
+  flex-wrap: nowrap; /* Empêcher le contenu de se répartir sur plusieurs lignes */
+  justify-content: center; /* Aligner les éléments au centre sur l'axe principal */
+  max-width: 1200px; /* Largeur maximale du conteneur */
+  margin: 0 auto; /* Centrer le conteneur horizontalement */
+}
+
+.form-wrapper {
+  margin-right: 20px; /* Espacement entre les formulaires */
+}
