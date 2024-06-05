@@ -1,5 +1,4 @@
 import React from 'react';
-import TaskList from './TaskList';
 import AddTask from './AddTask';
 import Timer from './Timer';
 import CurrentTime from './CurrentTime';
@@ -17,11 +16,18 @@ function App() {
     <WeatherWidget />
             <header className="App-header">
             
-                <h1>Task Manager</h1>
+                <h1>Rytm</h1>
                 
                                 <Menu />
-                <AddTask />
-                <TaskList />
+                                <div className="container">
+      {/* Répétez le formulaire trois fois */}
+      <div className="form-wrapper">
+        <AddTask />
+      </div>
+      <div className="form-wrapper">
+        <AddTask />
+      </div>
+    </div>
                 <Timer />
                 <CurrentTime /> {/* Intègre le composant ici */}
             </header>

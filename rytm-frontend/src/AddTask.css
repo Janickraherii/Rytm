@@ -1,0 +1,69 @@
+/* AddTask.css */
+.add-task-form {
+    display: flex;
+    justify-content: space-around; /* Espacement égal entre les colonnes */
+    max-width: 900px; /* Ajuster la largeur pour accommoder trois colonnes */
+    margin: 0 auto; /* Centrer le formulaire */
+    background-color: #ececec; /* Couleur de fond */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #ffffff, -10px -10px 20px #ffffff; /* Ombre extérieure pour l'effet illuminé */
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* Chaque colonne prend une part égale de l'espace */
+    margin: 0 10px; /* Espacement entre les colonnes */
+}
+
+.input-label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #432d1f; /* Couleur du texte */
+    font-weight: bold; /* Police en gras */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-field {
+    width: 100%; /* Utiliser toute la largeur disponible */
+    padding: 10px;
+    border: 1px solid #ffffff; /* Bordure plus lumineuse */
+    border-radius: 10px;
+    background-color: #ececec; /* Couleur de fond */
+    box-shadow: 5px 5px 10px #bfbfbf, -5px -5px 10px #ffffff; /* Ombre pour un effet bombé */
+    color: #432d1f; /* Couleur du texte */
+}
+
+.input-field:focus {
+    outline: none; /* Supprimer la bordure de focus */
+}
+
+.submit-button {
+    margin-top: 10px;
+    color: #432d1f; /* Couleur du texte du bouton */
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    padding: 0; /* Retirer le rembourrage */
+    width: 50px; /* Largeur du bouton */
+    height: 50px; /* Hauteur du bouton */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px #c4bfb8, -5px -5px 15px #ffffff; /* Ombre neumorphique */
+    border-radius: 50%; /* Bouton sous forme de cercle */
+}
+
+.submit-button:hover {
+    background: transparent; /* Fond transparent au survol */
+    box-shadow: inset 2px 2px 4px #ffffff, inset -2px -2px 4px #bfbfbf; /* Effet neumorphique creux au survol */
+}
+
+.plus-icon {
+    font-size: 1rem; /* Taille plus petite de l'icône "plus" */
+    color: #8a6d5a; /* Couleur marron clair pour l'icône "plus" */
+}

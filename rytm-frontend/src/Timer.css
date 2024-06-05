@@ -1,32 +1,105 @@
 /* Timer.css */
+.rectangle-neumorphism {
+  width: 200px; /* Ajuster la largeur */
+  height: 200px; /* Réduire la hauteur du rectangle */
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 50px; /* Déplacer le contenu à droite de l'écran */
+  transform: translateY(-50%);
+}
+.header-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-text h2 {
+  font-size: 6px; /* Taille de police encore plus petite */
+  transform: scale(0.7); /* Réduire la taille du texte */
+  font-weight: bold; /* Police un peu plus gras */
+  color: #c5a08c;
+  margin: 0;
+  padding: 0;
+  padding-left: 2px; /* Ajoute un padding de 2px à gauche */
+}
+
+
+
+
+
+
+
+
+
+
+
 .neumorphism-circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #f0f0f0;
-    box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s;
-  }
-  
-  .neumorphism-circle.active {
-    background-color: #ccc; /* Couleur différente quand le timer est actif */
-  }
-  
-  .timer-container {
-    text-align: center;
-  }
-  
-  .timer-container h2 {
-    font-size: 24px;
-  }
-  
-  .timer-container button {
-    margin-top: 10px;
-    padding: 8px 16px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
+  width: 100px; /* Ajuster la taille du cercle */
+  height: 100px; /* Ajuster la taille du cercle */
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff; /* Réduire l'effet de l'ombre */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Position absolue pour placer le cercle */
+  top: 60px; /* Ajuster la position verticale du cercle */
+  left: 50%; /* Centrer horizontalement */
+  transform: translateX(-50%); /* Centrer parfaitement */
+  transition: background-color 0.3s;
+}
+
+.neumorphism-circle.active {
+  background-color: #d7bba3; /* Marron clair chocolat au lait */
+  color: white; /* Texte blanc */
+}
+
+.timer-text {
+  font-size: 24px; /* Taille du texte plus grande */
+  color: brown; /* Couleur du texte marron */
+}
+
+.text-active {
+  color: white; /* Texte blanc lorsque le timer est actif */
+}
+
+
+.button-container {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex; /* Ajout de la propriété flex pour aligner les boutons horizontalement */
+  justify-content: center; /* Pour centrer les boutons horizontalement */
+  align-items: center; /* Pour centrer les boutons verticalement */
+}
+
+.button-container button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #9f7f76;
+}
+
+.button-container button:hover {
+  color: #8e7062;
+}
+
+.header-text {
+  margin-top: 20px; /* Ajout de marge en haut */
+  text-align: center; /* Centrage du texte */
+}
+
+.header-text h2 {
+  font-size: 24px; /* Taille du texte */
+  color: #8e6d5b; /* Couleur du texte marron chocolat au lait */
+}
